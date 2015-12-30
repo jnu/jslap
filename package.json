@@ -1,0 +1,36 @@
+{
+  "name": "jslap",
+  "version": "0.1.0",
+  "description": "JS linear algebra pack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "$(npm bin)/webpack-dev-server --content-base build/ --port 1234 --inline --hot",
+    "build": "$(npm bin)/webpack",
+    "build-min": "NODE_ENV=production $(npm bin)/webpack"
+  },
+  "keywords": [
+    "matrix",
+    "linear",
+    "algebra",
+    "math",
+    "gpu",
+    "webgl",
+    "webcl"
+  ],
+  "author": "Joe Nudell",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.3.26",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "es6-macros": "0.0.7",
+    "html-webpack-plugin": "^1.7.0",
+    "shader-loader": "^1.1.4",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "loglevel": "^1.4.0"
+  }
+}
